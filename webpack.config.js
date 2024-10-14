@@ -7,6 +7,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
+        publicPath: '/top-todo/'
     },
     devtool: "eval-source-map",
     devServer: {
