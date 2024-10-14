@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <!-- Insert logo here -->
+            ToDoList
+        </div>
+    </header>
+    <div class="main">
+        <div class="sidebar">
+            <div class="project-header">
+                <h2>Projects</h2>
+            </div>
+            <div class="projects">
+                <ul class="project-list"></ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="list-section">
+            <div class="project-title-header">Select a project</div>
+            <div class="add-todo hidden">
+                <h5>Add items</h5>
+            </div>
+            <div class="empty-list">
+                <h3>Looks like there's nothing here</h3>
+                <p id="create-project-message">Create a new project to begin</p>
+                <p id="create-todo-message">Add to-do list items to a project to show up here</p>
+            </div>
+            <div class="list-items">
+                <div class="accordion" id="todo-list-item-container"></div>
+            </div>
+        </div>
+    <dialog id="project-dialog">
+        <h2 id="project-dialog-title">Create a new project</h2>
+        <input type="text" placeholder="Project name" id="name-input">
+        <button id="project-confirm-button">Create</button>
+        <button id="project-cancel-button">Cancel</button>
+    </dialog>
+
+    <dialog id="todo-dialog">
+        <h2>New To-Do Item</h2>
+        <div>
+            <h4>Title</h4>
+            <input type="text" id="title" required>
+        </div>
+        <div>
+            <h4>Priority</h4>
+            <input type="text" id="priority" required>
+        </div>
+        <div>
+            <h4>Due date</h4>
+            <input type="date" id="due-date" required>
+        </div>
+        <div>
+            <h4>Description</h4>
+            <textarea rows="4" cols ="50"></textarea>
+        </div>
+        <button class="confirm" id="confirm-todo">Create</button>
+        <button class="cancel" id="cancel-todo">Cancel</button>
+    </dialog>
+
+    <button id="print-projects">LOG IT</button>
+</body>
+</html>

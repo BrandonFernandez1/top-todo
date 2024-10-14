@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway/Raleway-Regular.ttf');
+    font-style: normal;
+}
+
+body {
+    font-family: 'Raleway';
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+header {
+    background-color: #1e90ff;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+}
+
+.project-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.project-title-header {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.sidebar {
+    min-width: 250px;
+    width: 20%;
+    border: 1px solid rgb(194, 194, 194);
+    padding: 15px;
+}
+
+.list-section {
+    margin: 20px;
+    width: 80%;
+    position: relative;
+}
+
+.add-todo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.add-todo h5 {
+    margin: 0;
+}
+
+.add-todo:hover {
+    font-weight: bold;
+}
+
+.empty-list {
+    margin-top: 10px;
+}
+
+.project-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+.project-list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-title:hover {
+    cursor: pointer;
+}
+
+.selected {
+    color: #e16f00;
+}
+
+.icon {
+    aspect-ratio: 1;
+    height: 25px;
+    margin: 5px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    color: #3498db;
+    cursor: pointer;
+}
+
+#project-dialog {
+    border-radius: 8px;
+    border: 0;
+    padding: 25px;
+}
+
+#project-dialog h2 {
+    font-weight: bold;
+}
+
+#project-dialog button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+#project-dialog #project-confirm-button {
+    background-color: #4CAF50;
+}
+
+#project-dialog #project-confirm-button:hover {
+    background-color: #45a049;
+}
+
+.accordion-item {
+    width: 100%;
+}
+
+.accordion-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.input-error {
+    color: red;
+}
+
+#print-projects {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.accordion-body {
+    display: grid;
+    grid-template-columns: 125px 125px 1fr; /* 1:1:3 ratio for columns */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 10px; /* Optional spacing */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.todo-header {
+    font-weight: bold;
+    text-align: center;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.todo-header.description {
+    text-align: left;
+}
+
+.todo-description {
+    text-align: left;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.todo-priority, .todo-due-date {
+    text-align: center;
+    padding: 10px;
+    background-color: #eee;
+}
